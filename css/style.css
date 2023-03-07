@@ -1,0 +1,105 @@
+*{
+	font-family: sans-serif;
+	transition: all 0.5s;
+	box-sizing: content-box;
+		color: white;
+}
+h1{
+	text-align: center;
+	margin-top: 50px;
+}
+form .data{
+	margin-top: 20vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	grid-gap: 20px;
+}
+input{
+	color: black;
+}
+input[type="text"]{
+	width: 300px;
+	padding: 5px 10px;
+	border-radius: 10px;
+}
+@media (max-width: 420px){
+	input[type="text"]{
+	width: 90%;
+	padding: 5px 10px;
+	border-radius: 10px;
+	}
+}
+input:focus{
+	outline-style: none;
+	
+	box-shadow: 0px 5px 5px 5px rgba(0 ,0,0,0.5);
+}
+input[type="submit"]{
+	padding: 5px 10px;
+	border-radius: 10px;
+	background-color: darkgreen;
+	color: white;
+	font-weight: 700;
+	border-width: 1px;
+	display: block;
+	margin: 20px auto;
+}
+
+input[type="submit"]:hover{
+	
+	transform: scale(1.1);
+	box-shadow: 0px 0px 10px 2px rgba(255 ,255,255,0.2);
+}
+section{
+	margin-top: 50px;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+button{
+	border-radius: 10px;
+	border-style: solid;
+	padding: 5px 10px;
+	border-width: 1px;
+}
+
+.person{
+	padding: 20px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: white;
+	display: table;
+	border-radius: 20px;
+	margin: 20px;
+	display: grid;
+	grid-gap: 20px;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+}
+.person input{
+	text-align: center;
+	background-color: transparent;
+	border-style: none;
+	color: white;
+	box-shadow: 0px 5px 5px 5px rgba(0 ,0,0,0.5);
+	width: 90%;
+}
+.person img{
+	margin: auto;
+	width: 80%;
+	min-height: 250px;
+	max-height: 300px;
+	border-radius: 10px;
+}
+.edit{
+	background-color: darkgreen;
+	
+	display: inline-block;
+}
+.delete{
+	background-color: darkred;
+	display: inline-block;
+}
